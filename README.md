@@ -1,4 +1,4 @@
-## hCaptcha solver for puppeteer
+## hCaptcha solver for playwright
 
 A library to solve hcaptcha challenges that are automated within puppeteer. You can automatically set response values where they should be so the only thing left for you is submitting the page or you can get the response token. Average response time is rougly 13 - 20 seconds with TensorFlow's Image Recognition.
 
@@ -6,7 +6,6 @@ A library to solve hcaptcha challenges that are automated within puppeteer. You 
 
 ### If you like this project feel free to donate!
 
-[![Donate with PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/donate/?hosted_button_id=YM522XYP26LWU)
 
 ## Install
 
