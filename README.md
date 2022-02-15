@@ -1,4 +1,4 @@
-## hCaptcha solver for [Playwright](https://playwright.dev/)
+## hCaptcha solver for [Playwright](https://playwright.dev/) written in Typescript
 
 A library to solve hcaptcha challenges that are automated within Playwright. You can automatically set response values where they should be so the only thing left for you is submitting the page or you can get the response token. Average response time is rougly 13 - 20 seconds with TensorFlow's Image Recognition.
 
