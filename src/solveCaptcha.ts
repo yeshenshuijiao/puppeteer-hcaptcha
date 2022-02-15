@@ -6,15 +6,14 @@ import axios from 'axios';
 import userAgents from './useragents';
 
 const solve = async (page, sitekey, host): Promise<string> => {
-    let model;
+    const tfModel = await cocoSsd.load();
 
     const tensor = async imgURL => {
         try {
             const image = await axios.get(imgURL, { responseType: 'arraybuffer' }).then(response => response.data);
 
-            model = model || await cocoSsd.load();
-
-            return model.detect(tf.node.decodeImage(image));
+            // @ts-ignore
+            return tfModel.detect(tf.node.decodeImage(image));
         } catch (e) {
             return null;
         }
