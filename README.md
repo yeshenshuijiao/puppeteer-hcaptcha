@@ -17,7 +17,7 @@ npm i puppeteer-hcaptcha
 ## Usage
 
 ```javascript
-await hcaptcha(page);
+await solveCaptcha(page);
 ```
 
 -   `page` [&lt;Page&gt;](https://pptr.dev/#?product=Puppeteer&version=v12.0.1&show=api-class-page) - Puppeteer Page Instance
