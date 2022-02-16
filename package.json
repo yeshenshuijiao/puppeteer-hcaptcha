@@ -1,8 +1,8 @@
 {
-  "name": "playwright-hcaptcha",
-  "version": "0.0.1",
+  "name": "playwright-hcaptcha-solver",
+  "version": "1.0.0",
   "description": "A library to solve hcaptcha challenges with playwright",
-  "main": "src/solveCaptcha.ts",
+  "main": "dist/index.js",
   "bundledDependencies": false,
   "dependencies": {
     "@tensorflow-models/coco-ssd": "^2.2.2",
@@ -11,6 +11,11 @@
     "jwt-decode": "^3.1.2",
     "playwright-core": "^1.18.1",
     "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "postinstall": "tsc",
+    "build": "tsc"
   },
   "devDependencies": {
     "ts-node-dev": "^1.1.8"
@@ -31,7 +36,7 @@
     "playwrighthcaptcha"
   ],
   "author": "xrip",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/xrip/playwright-hcaptcha/issues"
   },

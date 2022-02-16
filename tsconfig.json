@@ -10,10 +10,10 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "sourceMap": false,
-    "inlineSourceMap": false,
+    "inlineSourceMap": true,
     "incremental": true,
     "lib": [
-      "es2021",
+      "esnext",
       "dom"
     ],
   }

@@ -123,6 +123,8 @@ const solve = async (page, sitekey, host): Promise<string> => {
     }
 };
 
+
+
 export const solveCaptcha = async (page: Page) => {
     const hcaptchaIframe = await page.waitForSelector('iframe[src*="newassets.hcaptcha.com"]');
     const urlParams = new URLSearchParams(await hcaptchaIframe.getAttribute('src'));

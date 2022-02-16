@@ -19,31 +19,29 @@ yarn add https://github.com/xrip/playwright-hcaptcha-solver.git
 ## Usage
 
 ```javascript
-await solveCaptcha(page);
+await index(page);
 ```
 
 -   `page` [&lt;Page&gt;](https://playwright.dev/docs/api/class-page) - Playwright Page Instance
 
-### Automatically set respone value 
+### Automatically set respone value
 
 ```javascript
-import { chromium } from 'playwright-core';
-import { solveCaptcha } from './solveCaptcha';
-import userAgents from './useragents';
+import { chromium } from 'playwright';
+import { solveCaptcha } from 'playwright-hcaptcha-solver';
 
 (async () => {
 
     const browser = await chromium.launch({
         headless: false,
         args: [
-            `--user-agent=${userAgents[Math.floor(Math.random() * userAgents.length)]}`,
             '--disable-blink-features=AutomationControlled',
         ],
 
     });
 
     const ctx = await browser.newContext();
-    await ctx.addInitScript( () => {
+    await ctx.addInitScript(() => {
 
     });
     const page = await ctx.newPage();
