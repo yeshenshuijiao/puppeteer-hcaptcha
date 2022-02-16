@@ -36,7 +36,6 @@ import userAgents from './useragents';
     const browser = await chromium.launch({
         headless: false,
         args: [
-            `--user-agent=${userAgents[Math.floor(Math.random() * userAgents.length)]}`,
             '--disable-blink-features=AutomationControlled',
         ],
 
