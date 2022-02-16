@@ -28,7 +28,7 @@ await solveCaptcha(page);
 
 ```javascript
 import { chromium } from 'playwright-core';
-import { solveCaptcha } from './solveCaptcha';
+import { solveCaptcha } from 'playwright-hcaptcha-solver';
 import userAgents from './useragents';
 
 (async () => {
