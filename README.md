@@ -19,7 +19,7 @@ yarn add https://github.com/xrip/playwright-hcaptcha-solver.git
 ## Usage
 
 ```javascript
-await index(page);
+await solveCaptcha(page);
 ```
 
 -   `page` [&lt;Page&gt;](https://playwright.dev/docs/api/class-page) - Playwright Page Instance
